@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
 
-// creando componentes para cada estructura
+/* creando componentes para cada estructura*/
+
+// componente para el header
 class Header extends React.Component{
   render(){
     return(
@@ -14,6 +16,21 @@ class Header extends React.Component{
   }
 }
 
+// componente para las listas ordenadas
+class Ol extends React.Component{
+  render(){
+    return(
+      <ol>
+        <li>segunda gerra mundial</li>
+        <li>UNIVAC</li>
+        <li>COBOL</li>
+        <li>estandares</li>
+      </ol>
+    );
+  }
+}
+
+// componente que tiene la información más importante
 class Main extends React.Component{
   render(){
     return(
@@ -24,13 +41,7 @@ class Main extends React.Component{
         <p>Debido a sus logros y su rango naval, a veces se la llamaba "Grace asombrosa".La Marina de los EE. UU. Arleigh Burke, destructora de misiles guiados de clase USS  Hopper, fue nombrada por ella, al igual que la supercomputadora Cray XE6 "Hopper" en el NERSC . Durante su vida, Hopper recibió 40 títulos honoríficos de universidades de todo el mundo. En 1991, recibió la Medalla Nacional de Tecnología . El 22 de noviembre de 2016, fue premiada póstumamente con la Medalla Presidencial de la Libertad por el presidente Barack Obama  le otorgó la <strong>Medalla Presidencial de la Libertad a título póstumo</strong> .  </p>
 
         <h3>carrera</h3>
-        <ol>
-          <li>segunda gerra mundial</li>
-          <li>UNIVAC</li>
-          <li>COBOL</li>
-          <li>estandares</li>
-        </ol>
-
+        <Ol/>
         <h2>frase</h2>
         <blockquote cite="http://es.wikiquote.org/wiki/Grace_Hopper">
           «Los seres humanos son alérgicos a los cambios. Les encanta decir: "Siempre lo hemos hecho así". Trato de luchar contra eso. Es por eso por lo que tengo un reloj de pared cuyas agujas se mueven en sentido contrario».
@@ -42,6 +53,7 @@ class Main extends React.Component{
   }
 }
 
+// componente para barra lateral que tiene información secundaria
 class Aside extends React.Component{
   render(){
     return(
@@ -114,8 +126,6 @@ class App extends React.Component{
 }
 
 // ReactDOM.render(<App/>, document.getElementById('main'));
-
-
 // class App extends Component {
 //   render() {
 //     return (
