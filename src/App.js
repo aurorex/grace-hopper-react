@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
-import './App.css';
+import './index.css';
 
 /* creando componentes para cada estructura*/
 
@@ -53,66 +53,83 @@ class Main extends React.Component{
   }
 }
 
+// componentes para la tabla
+class Thead extends React.Component{
+  render(){
+    return(
+      <thead>
+        <tr>
+          <th colSpan="2">Grace Murray Hopper</th>
+        </tr>
+      </thead>
+    );
+  }
+}
+
+class Tbody extends React.Component{
+  render(){
+    return(
+      <tbody>
+        <tr>
+          <td colSpan="2">
+            <img src="assets/img/grace hopper.jpg" alt="grace hopper"/>
+            <p>Contraalmirante Grace M. Hopper, 1984</p>
+            <hr/>
+          </td>
+        </tr>
+        <tr>
+          <th>Apodo (s)</th>
+          <td>"Increíble gracia"</td>
+        </tr>
+        <tr>
+          <th>Nacido</th>
+          <td>9 de diciembre de 1906
+            Ciudad de Nueva York, Nueva York, EE. UU.</td>
+        </tr>
+        <tr>
+          <th>Murió</th>
+          <td>1 de enero de 1992 (de 85 años) Arlington, Virginia , EE. UU.</td>
+        </tr>
+        <tr>
+          <th>Servicio / sucursal</th>
+          <td> Armada de los Estados Unidos</td>
+        </tr>
+        <tr>
+          <th>Lealtad</th>
+          <td>Estados Unidos de America</td>
+        </tr>
+        <tr>
+          <th>Años de servicio</th>
+          <td>1943-1966, 1967-1971, 1972-1986</td>
+        </tr>
+        <tr>
+          <th>Rango</th>
+          <td> Almirante trasero (mitad inferior)</td>
+        </tr>
+        <tr>
+          <th>Premios</th>
+          <td>Medalla por Servicio Distinguido de Defensa legión de mérito medalla de servicio meritoria estadounidense medalla de la campaña de la Segunda Guerra Mundial de la Victoria Medalla Nacional de Defensa medalla de servicio de las Fuerzas Armadas Medalla de la Reserva con dos de reloj de arena dispositivos Medalla Reserva Naval Medalla Presidencial de la Libertad (póstuma)</td>
+        </tr>
+      </tbody>
+    );
+  }
+}
+
 // componente para barra lateral que tiene información secundaria
 class Aside extends React.Component{
   render(){
     return(
       <div  className="summary">
         <table>
-          <thead>
-            <tr>
-              <th colSpan="2">Grace Murray Hopper</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colSpan="2">
-                <img src="assets/img/grace hopper.jpg" alt="grace hopper"/>
-                <p>Contraalmirante Grace M. Hopper, 1984</p>
-                <hr/>
-              </td>
-            </tr>
-            <tr>
-              <th>Apodo (s)</th>
-              <td>"Increíble gracia"</td>
-            </tr>
-            <tr>
-              <th>Nacido</th>
-              <td>9 de diciembre de 1906
-                Ciudad de Nueva York, Nueva York, EE. UU.</td>
-            </tr>
-            <tr>
-              <th>Murió</th>
-              <td>1 de enero de 1992 (de 85 años) Arlington, Virginia , EE. UU.</td>
-            </tr>
-            <tr>
-              <th>Servicio / sucursal</th>
-              <td> Armada de los Estados Unidos</td>
-            </tr>
-            <tr>
-              <th>Lealtad</th>
-              <td>Estados Unidos de America</td>
-            </tr>
-            <tr>
-              <th>Años de servicio</th>
-              <td>1943-1966, 1967-1971, 1972-1986</td>
-            </tr>
-            <tr>
-              <th>Rango</th>
-              <td> Almirante trasero (mitad inferior)</td>
-            </tr>
-            <tr>
-              <th>Premios</th>
-              <td>Medalla por Servicio Distinguido de Defensa legión de mérito medalla de servicio meritoria estadounidense medalla de la campaña de la Segunda Guerra Mundial de la Victoria Medalla Nacional de Defensa medalla de servicio de las Fuerzas Armadas Medalla de la Reserva con dos de reloj de arena dispositivos Medalla Reserva Naval Medalla Presidencial de la Libertad (póstuma)</td>
-            </tr>
-          </tbody>
+          <Thead/>
+          <Tbody/>
         </table>
-
       </div>
     );
   }
 }
 
+// 
 class App extends React.Component{
   render(){
     return(
@@ -124,6 +141,8 @@ class App extends React.Component{
     );
   }
 }
+
+export default App;
 
 // ReactDOM.render(<App/>, document.getElementById('main'));
 // class App extends Component {
@@ -142,5 +161,3 @@ class App extends React.Component{
 //     );
 //   }
 // }
-
-export default App;
