@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: cornsilk;
 }
 
 h1{
@@ -13,6 +14,7 @@ h1{
   display: inline-block;
   font-size: 12px;
   line-height: 1.6;
+  padding: 15px;
 }
 
 .summary{
@@ -20,7 +22,8 @@ h1{
   vertical-align: top;
   width: 35%;
   float: right;
-
+  background: #B0C4DE;
+  padding: 15px;
 }
 
 .summary-table{
@@ -37,5 +40,8 @@ h1{
   text-align: center;
 }
 
+td{
+  border: 1px solid white;
+}
 
 

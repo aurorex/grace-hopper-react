@@ -72,7 +72,7 @@ class Tbody extends React.Component{
     return(
       <tbody>
         <tr>
-          <td colSpan="2">
+          <td style={{border: '1px solid white', textAlign:'center',padding:'10px'}} colSpan="2">
             <img src={image} alt="grace hopper"/>
             <p>Contraalmirante Grace M. Hopper, 1984</p>
             <hr/>
