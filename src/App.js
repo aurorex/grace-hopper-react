@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './index.css';
 
+ import image from './grace-hopper.jpg';
 /* creando componentes para cada estructura*/
 
 // componente para el header
@@ -47,7 +48,7 @@ class Main extends React.Component{
           «Los seres humanos son alérgicos a los cambios. Les encanta decir: "Siempre lo hemos hecho así". Trato de luchar contra eso. Es por eso por lo que tengo un reloj de pared cuyas agujas se mueven en sentido contrario».
         </blockquote>
 
-        <a href="file:///C:/Users/aurorav/Desktop/GRACE%20HOPPER-html-css/informacion.html" target="_blank">primeros años y educación</a>
+        <a href="informacion.html" target="_blank">primeros años y educación</a>
       </div>
     );
   }
@@ -72,7 +73,7 @@ class Tbody extends React.Component{
       <tbody>
         <tr>
           <td colSpan="2">
-            <img src="assets/img/grace hopper.jpg" alt="grace hopper"/>
+            <img src={image} alt="grace hopper"/>
             <p>Contraalmirante Grace M. Hopper, 1984</p>
             <hr/>
           </td>

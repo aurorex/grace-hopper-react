@@ -3,3 +3,39 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h1{
+  text-align: center;
+}
+
+.biography{
+  width: 60%;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.summary{
+  display: inline-block;
+  vertical-align: top;
+  width: 35%;
+  float: right;
+
+}
+
+.summary-table{
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  width: 35%;
+}
+
+.summary-table thead th{
+  background-color: #B0C4DE;
+}
+
+.summary-table tbody tr:first-child{
+  text-align: center;
+}
+
+
+
